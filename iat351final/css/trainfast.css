@@ -1,0 +1,43 @@
+.bg-purple {
+  background-color: #2A1A52;
+}
+
+.bg-black {
+  background-color: #000000;
+}
+
+.bg-orange {
+  background-color: #CD6163;
+}
+
+.sidebar .nav-link {
+  border-bottom: 2px solid darkgrey;
+}
+
+.sidebar .nav-link.active {
+  background-color: #000000;
+  border-bottom: 2px solid #25C6DA;
+}
+
+
+.btn-outline-default {
+  color: #CD6163;
+  background-color: transparent;
+  background-image: none;
+  border-color: #CD6163;
+}
+
+.btn-outline-default:hover {
+  color: #fff;
+  background-color: #CD6163;
+  border-color: #CD6163;
+}
+
+.img-fit {
+  width:35%;
+}
+
+.pos-end {
+  position: absolute;
+  bottom: 0;
+}
