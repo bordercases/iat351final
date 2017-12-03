@@ -1,0 +1,100 @@
+body {
+	margin-left: 10%;
+}
+
+.sidebar {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 10%;
+	height: 100%;
+	background-color: gray;
+}
+
+.bookmark {
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.bookmark:nth-child(odd)  {
+	background-color: #c9c9ff;
+}
+
+.bookmark:nth-child(even)  {
+	background-color: #8989ff;
+}
+
+.bookmark:hover span {
+	cursor: pointer;
+	color: yellow;
+}
+
+#bookmarkMaker {
+	padding: 1em;
+	background-color: #c9c9ff;
+}
+
+.minInput {
+	width: 2.5em;
+}
+.secInput {
+	width: 2.5em;
+}
+
+.field {
+	background: white url("../assets/field.jpg") no-repeat; 
+	background-size: contain;
+}
+
+.playerIcon {
+	color: white;
+	position: relative;
+	width: 50px;
+	height: 50px;
+}
+
+.playerIcon:hover {
+	cursor: pointer;
+}
+
+.playerIcon:active {
+	background-color: yellow;
+	cursor: move;
+}
+.player2 {
+	background: url("../assets/shirt2.png") no-repeat;
+	background-size: 50px 50px;
+	top: 119px;
+	left: 325px;
+}
+.player3 {
+	background: url("../assets/shirt3.png") no-repeat;
+	background-size: 50px 50px;
+	top: -6px;
+	left: 271px;
+}
+.player4 {
+	background: url("../assets/shirt4.png") no-repeat;
+	background-size: 50px 50px;
+	top: 68px;
+	left: 55px;
+}
+.player5 {
+	background: url("../assets/shirt5.png") no-repeat;
+	background-size: 50px 50px;
+	top: -10px;
+	left: 198px;
+}
+.player6 {
+	background: url("../assets/shirt6.png") no-repeat;
+	background-size: 50px 50px;
+	top: 12px;
+	left: 136px;
+}
+.player8 {
+	background: url("../assets/shirt8.png") no-repeat;
+	background-size: 50px 50px;
+	top: -50px;
+	left: 205px;
+}
