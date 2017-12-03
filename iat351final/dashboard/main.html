@@ -18,6 +18,8 @@
    <!-- TrainFast Style -->
    <link href="../css/trainfast.css" rel="stylesheet">
 
+   <!-- For the video cutting -->
+   <link href="../css/main.css" rel="stylesheet">
 
  </head>
 
@@ -133,88 +135,83 @@
 
        <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
          <h1>Overview</h1>
+         <h2>Simon Fraser University vs. Utah Valley University</h2>
 
-         <section class="flex-row">
-           <div></div>
-           <div></div>
-         </section>
-         <section class="flex-row">
-           <div></div>
-           <div></div>
-           <div></div>
-         </section>
-         <section class="flex-row">
-           <div>
-             <img>
-           </div>
-         </section>
+       	<section class="row">
 
-
-         <h1>vs. Utah Valley University</h1>
-       	<div class="row">
-       		<div id="filmwindow" class="col-md-6">
-       			<iframe width="560" height="315" src="https://www.youtube.com/embed/JY2pw7oKYA8?start=1" frameborder="0"></iframe>
+          <div id="filmwindow" class="col-md-4 col-sm-2">
+       			<iframe width="100%" height="100%" src="https://www.youtube.com/embed/JY2pw7oKYA8?start=1" frameborder="0"></iframe>
        		</div>
-       		<div class="field col-md-6">
-       			<div class="playerIcon player2"></div>
-       			<div class="playerIcon player3"></div>
-       			<div class="playerIcon player4"></div>
-       			<div class="playerIcon player5"></div>
-       			<div class="playerIcon player6"></div>
-       			<div class="playerIcon player8"></div>
-       		</div>
-       	</div>
 
+          <div class="mr-4">
+            <h2>Bookmarks</h2>
+            <div id="bookmarkList">
+              <div class="bookmark">
+                <span data-url="https://www.youtube.com/embed/JY2pw7oKYA8?start=1010&end=1020&autoplay=1">For Player 6</span>
+              </div>
+              <div class="bookmark">
+                <span data-url="https://www.youtube.com/embed/JY2pw7oKYA8?start=4800&end=5010&autoplay=1">For Player 4 and 8</span>
+              </div>
+              <div class="bookmark">
+                <span data-url="https://www.youtube.com/embed/JY2pw7oKYA8?start=1510&end=1610&autoplay=1">EVERYONE WATCH CAREFULLY</span>
+              </div>
+              <div class="bookmark">
+                <span data-url="https://www.youtube.com/embed/JY2pw7oKYA8?start=1540&end=1650&autoplay=1">Remember this part</span>
+              </div>
+            </div>
+          </div>
 
+          <div class="field col-md-5 mr-2">
+            <div class="playerIcon player2"></div>
+            <div class="playerIcon player3"></div>
+            <div class="playerIcon player4"></div>
+            <div class="playerIcon player5"></div>
+            <div class="playerIcon player6"></div>
+            <div class="playerIcon player8"></div>
+          </div>
 
-       	<h3>New Bookmark</h3>
-       	<div id="bookmarkMaker" class="row">
-       		<div class="col-sm-4">
+        </section>
+
+       	<h2>New Bookmark</h2>
+        <section class="row text-center">
+       		<div class="col-md-5 col-sm-1">
        			Bookmark Name:<br>
        			<input type="text" name="label" value="">
        		</div>
-       		<div class="col-sm-3">
+       		<div class="col-md-2 col-sm-2">
        			Start Time:<br>
        			<input type="text" name="s_minutes" value="" class="minInput"> :
        			<input type="text" name="s_seconds" value="" class="secInput">
        		</div>
-       		<div class="col-sm-3">
+       		<div class="col-md-2 col-sm-2">
        			End Time:<br>
        			<input type="text" name="e_minutes" value="" class="minInput"> :
        			<input type="text" name="e_seconds" value="" class="secInput">
        		</div>
-       		<div class="col-sm-2">
+       		<div class="col-md-2 col-sm-2">
        			<button id="saveBookmark">Save</button>
        		</div>
-       	</div>
+       	</section>
 
-       	<h2>Bookmarks</h2>
-       	<div id="bookmarkList" class="row">
-       		<div class="bookmark col-sm-4">
-       			<span data-url="https://www.youtube.com/embed/JY2pw7oKYA8?start=1010&end=1020&autoplay=1">For Player 6</span>
-       		</div>
-       		<div class="bookmark col-sm-4">
-       			<span data-url="https://www.youtube.com/embed/JY2pw7oKYA8?start=4800&end=5010&autoplay=1">For Player 4 and 8</span>
-       		</div>
-       		<div class="bookmark col-sm-4">
-       			<span data-url="https://www.youtube.com/embed/JY2pw7oKYA8?start=1510&end=1610&autoplay=1">EVERYONE WATCH CAREFULLY</span>
-       		</div>
-       		<div class="bookmark col-sm-4">
-       			<span data-url="https://www.youtube.com/embed/JY2pw7oKYA8?start=1540&end=1650&autoplay=1">Remember this part</span>
-       		</div>
-       	</div>
+        <h2>Player Performance<h2>
+        <section class="row">
+          <div class="col-md-5 col-sm-2">
+            <img id="gameperformance" src="../img/stats.png" alt="Lionel Messi's Game Performance">
+          </div>
+        </section>
 
        	<!-- Modal -->
        	<div class="modal fade" id="player2info" role="dialog">
        		<div class="modal-dialog">
        			<!-- Modal content-->
        			<div class="modal-content">
-       				<div class="modal-header">
+       				<!-- <div class="modal-header">
        					<button type="button" class="close" data-dismiss="modal">&times;</button>
        					<h4 class="modal-title">Notes on Player 2</h4>
-       				</div>
+       				</div> -->
        				<div class="modal-body">
-       					<textarea rows="4" cols="70">Good player</textarea>
+       					<!-- <textarea rows="4" cols="70">Good player</textarea> -->
+                <img src="../img/highlights.png">
        				</div>
        				<div class="modal-footer">
        					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -226,12 +223,13 @@
        		<div class="modal-dialog">
        			<!-- Modal content-->
        			<div class="modal-content">
-       				<div class="modal-header">
+       				<!-- <div class="modal-header">
        					<button type="button" class="close" data-dismiss="modal">&times;</button>
        					<h4 class="modal-title">Notes on Player 3</h4>
-       				</div>
+       				</div> -->
        				<div class="modal-body">
-       					<textarea rows="4" cols="70">Good player</textarea>
+       					<!-- <textarea rows="4" cols="70">Good player</textarea> -->
+                <img src="../img/highlights.png">
        				</div>
        				<div class="modal-footer">
        					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -243,12 +241,13 @@
        		<div class="modal-dialog">
        			<!-- Modal content-->
        			<div class="modal-content">
-       				<div class="modal-header">
+       				<!-- <div class="modal-header">
        					<button type="button" class="close" data-dismiss="modal">&times;</button>
        					<h4 class="modal-title">Notes on Player 4</h4>
-       				</div>
+       				</div> -->
        				<div class="modal-body">
-       					<textarea rows="4" cols="70">Good player</textarea>
+       					<!-- <textarea rows="4" cols="70">Good player</textarea> -->
+                <img src="../img/highlights.png">
        				</div>
        				<div class="modal-footer">
        					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -260,12 +259,13 @@
        		<div class="modal-dialog">
        			<!-- Modal content-->
        			<div class="modal-content">
-       				<div class="modal-header">
+       				<!-- <div class="modal-header">
        					<button type="button" class="close" data-dismiss="modal">&times;</button>
        					<h4 class="modal-title">Notes on Player 5</h4>
-       				</div>
+       				</div> -->
        				<div class="modal-body">
-       					<textarea rows="4" cols="70">Good player</textarea>
+       					<!-- <textarea rows="4" cols="70">Good player</textarea> -->
+                <img src="../img/highlights.png">
        				</div>
        				<div class="modal-footer">
        					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -277,12 +277,13 @@
        		<div class="modal-dialog">
        			<!-- Modal content-->
        			<div class="modal-content">
-       				<div class="modal-header">
+       				<!-- <div class="modal-header">
        					<button type="button" class="close" data-dismiss="modal">&times;</button>
        					<h4 class="modal-title">Notes on Player 6</h4>
-       				</div>
+       				</div> -->
        				<div class="modal-body">
-       					<textarea rows="4" cols="70">Good player</textarea>
+       					<!-- <textarea rows="4" cols="70">Good player</textarea> -->
+                <img src="../img/highlights.png">
        				</div>
        				<div class="modal-footer">
        					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -294,12 +295,13 @@
        		<div class="modal-dialog">
        			<!-- Modal content-->
        			<div class="modal-content">
-       				<div class="modal-header">
+       				<!-- <div class="modal-header">
        					<button type="button" class="close" data-dismiss="modal">&times;</button>
        					<h4 class="modal-title">Notes on Player 8</h4>
-       				</div>
+       				</div> -->
        				<div class="modal-body">
-       					<textarea rows="4" cols="70">Good player</textarea>
+       					<!-- <textarea rows="4" cols="70">Good player</textarea> -->
+                <img src="../img/highlights.png">
        				</div>
        				<div class="modal-footer">
        					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -459,7 +461,6 @@
                </tr>
              </tbody>
            </table> -->
-         </div>
        </main>
      </div>
    </div>
