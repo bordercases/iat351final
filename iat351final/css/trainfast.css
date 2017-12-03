@@ -48,3 +48,8 @@
   width: auto;
   height: 80%;
 }
+
+main img.placeholder-img {
+  width: 105%;
+  margin-left: -5%;
+}
