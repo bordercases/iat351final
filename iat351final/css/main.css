@@ -1,5 +1,5 @@
 .bookmark {
-	text-align: center;
+	text-align: left;
 	padding: 1.5%;
 }
 
@@ -11,7 +11,7 @@
 	background-color: #8989ff;
 }
 
-.bookmark:hover span {
+.bookmark span:hover {
 	cursor: pointer;
 	color: yellow;
 }

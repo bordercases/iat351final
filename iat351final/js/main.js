@@ -1,10 +1,16 @@
 $(document).ready(function(){
-	$(".bookmark span").click(function() {
+	$(".bookmark .play").click(function() {
 		reloadVideo($(this).data("url"));
 	});
 
+	$(".bookmark .note").click(function(){
+		loadModal($(this).data("txt"));
+		$("#myModal").modal("show");
+	});
+
+
 	$("#saveBookmark").click(function() {
-		makeNewBookmark($("[name=label]").val(), $("[name=s_minutes]").val(), $("[name=s_seconds]").val(), $("[name=e_minutes]").val(), $("[name=e_seconds]").val());
+		makeNewBookmark($("[name=label]").val(), $("[name=s_minutes]").val(), $("[name=s_seconds]").val(), $("[name=e_minutes]").val(), $("[name=e_seconds]").val(), $("#bmNotes").val());
 	});
 
 	var $dragging = null;
@@ -23,24 +29,6 @@ $(document).ready(function(){
 	    $dragging = null;
 	});
 
-	$(".player2").dblclick(function(){
-		$("#player2info").modal("show");
-	});
-	$(".player3").dblclick(function(){
-		$("#player3info").modal("show");
-	});
-	$(".player4").dblclick(function(){
-		$("#player4info").modal("show");
-	});
-	$(".player5").dblclick(function(){
-		$("#player5info").modal("show");
-	});
-	$(".player6").dblclick(function(){
-		$("#player6info").modal("show");
-	});
-	$(".player8").dblclick(function(){
-		$("#player8info").modal("show");
-	});
 });
 
 function reloadVideo(url) {
@@ -48,7 +36,12 @@ function reloadVideo(url) {
 	console.log(url);
 }
 
-function makeNewBookmark(label, s_m, s_s, e_m, e_s) {
+function loadModal(txt) {
+	$("#myModal .modal-body").text(txt);
+	console.log(txt);
+}
+
+function makeNewBookmark(label, s_m, s_s, e_m, e_s, txt) {
 	name = "New Bookmark";
 	if (label.trim()) name = label;
 
@@ -68,10 +61,18 @@ function makeNewBookmark(label, s_m, s_s, e_m, e_s) {
 	url = url + "?start=" + startSeconds + "&end=" + endSeconds + "&autoplay=1";
 	console.log(url);
 
-	$("#bookmarkList").append('<div class="bookmark col-sm-4"><span data-url="'+ url + '">' + name + '</span></div>');
-	$(".bookmark span").unbind( "click" );
-	$(".bookmark span").click(function() {
+	$("#bookmarkList").append('<div class="row bookmark"><div class="col-md-8">' + name + '</div><div class="col-md-2"><span data-url="'+ url + '" class="play glyphicon glyphicon-play-circle"></span></div><div class="col-md-2"><span data-txt="' + txt + '" class="note glyphicon glyphicon-list-alt"></span></div></div>');
+
+	$(".bookmark .play").unbind( "click" );
+	$(".bookmark .note").unbind( "click" );
+
+	$(".bookmark .play").click(function() {
 		reloadVideo($(this).data("url"));
+	});
+
+	$(".bookmark .note").click(function(){
+		loadModal($(this).data("txt"));
+		$("#myModal").modal("show");
 	});
 
 	$("[name=label]").val("");
@@ -79,6 +80,7 @@ function makeNewBookmark(label, s_m, s_s, e_m, e_s) {
 	$("[name=s_seconds]").val("");
 	$("[name=e_minutes]").val("");
 	$("[name=e_seconds]").val("");
+	$("#bmNotes").val("");
 }
 
 function getPathFromUrl(url) {
