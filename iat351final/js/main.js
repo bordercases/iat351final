@@ -8,7 +8,6 @@ $(document).ready(function(){
 		$("#myModal").modal("show");
 	});
 
-
 	$("#saveBookmark").click(function() {
 		makeNewBookmark($("[name=label]").val(), $("[name=s_minutes]").val(), $("[name=s_seconds]").val(), $("[name=e_minutes]").val(), $("[name=e_seconds]").val(), $("#bmNotes").val());
 	});
@@ -28,6 +27,7 @@ $(document).ready(function(){
 	$(document.body).on("mouseup", function (e) {
 	    $dragging = null;
 	});
+
 
 });
 

@@ -1,3 +1,4 @@
+
 .bookmark {
 	text-align: left;
 	padding: 1.5%;
@@ -48,39 +49,81 @@
 	background-color: yellow;
 	cursor: move;
 }
+
+.player1 {
+	background: url("../img/shirt2.png") no-repeat;
+	background-size: 50px 50px;
+	position:absolute;
+	top: 119px;
+	left: 325px;
+}
 .player2 {
 	background: url("../img/shirt2.png") no-repeat;
 	background-size: 50px 50px;
+	position:absolute;
 	top: 119px;
 	left: 325px;
 }
 .player3 {
 	background: url("../img/shirt3.png") no-repeat;
 	background-size: 50px 50px;
+	position:absolute;
 	top: -6px;
 	left: 271px;
 }
 .player4 {
 	background: url("../img/shirt4.png") no-repeat;
 	background-size: 50px 50px;
+	position:absolute;
 	top: 68px;
 	left: 55px;
 }
 .player5 {
 	background: url("../img/shirt5.png") no-repeat;
 	background-size: 50px 50px;
+	position:absolute;
 	top: -10px;
 	left: 198px;
 }
 .player6 {
 	background: url("../img/shirt6.png") no-repeat;
 	background-size: 50px 50px;
+	position:absolute;
 	top: 12px;
 	left: 136px;
+}
+.player7 {
+	background: url("../img/shirt7.png") no-repeat;
+	background-size: 50px 50px;
+	position:absolute;
+	top: -50px;
+	left: 205px;
 }
 .player8 {
 	background: url("../img/shirt8.png") no-repeat;
 	background-size: 50px 50px;
+	position:absolute;
+	top: -50px;
+	left: 205px;
+}
+.player9 {
+	background: url("../img/shirt8.png") no-repeat;
+	background-size: 50px 50px;
+	position:absolute;
+	top: -50px;
+	left: 205px;
+}
+.player10 {
+	background: url("../img/shirt8.png") no-repeat;
+	background-size: 50px 50px;
+	position:absolute;
+	top: -50px;
+	left: 205px;
+}
+.player11 {
+	background: url("../img/shirt8.png") no-repeat;
+	background-size: 50px 50px;
+	position:absolute;
 	top: -50px;
 	left: 205px;
 }
